@@ -1,0 +1,47 @@
+POWER SOLUTION
+public int power(int base, int exponent) {
+    if (exponent == 0) {
+      return 1;
+    }
+    return base * power(base,exponent-1);
+  }
+  
+  
+FACTORIAL SOLUTION
+public int factorial(int num) {
+    if (num<=1) {
+      return 1;
+    }
+    return num * factorial(num-1);
+  }
+  
+  
+  
+PRODUCT OF ARRAY SOLUTION
+public int productofArray(int A[], int N) 
+    { 
+        if (N <= 0) 
+            return 1; 
+        return (productofArray(A, N - 1) * A[N - 1]); 
+    } 
+    
+    
+RECURSIVE RANGE SOLUTION
+public int recursiveRange(int num) {
+     if (num<=0) {
+       return 0;
+     }
+     return num + recursiveRange(num - 1);
+   } 
+   
+   
+FIBONACCI SOLUTION
+ public int fib(int n) {
+    if (n<0) {
+      return -1;
+    }
+    if (n==0 || n==1) {
+      return n;
+    }
+    return fib(n-1) + fib(n-2);
+  }
